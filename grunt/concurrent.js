@@ -2,26 +2,30 @@ module.exports = {
 
     // Task options
     options: {
-        limit: 3
+        limit: 5
     },
 
     // Dev tasks
     devFirst: [
-        //'clean',
+        'clean',
         'jshint'
     ],
     devSecond: [
-        'less:dev',
-        'uglify'
+        'less:dev',        
+        'autoprefixer',        
+        'concat',
+        'uglify'         
     ],
 
     // Production tasks
     prodFirst: [
-        //'clean',
+        'clean',
         'jshint'
     ],
     prodSecond: [
-        'less:prod',
+        'less:dev',        
+        'autoprefixer',
+        'concat',
         'uglify'
     ],
 

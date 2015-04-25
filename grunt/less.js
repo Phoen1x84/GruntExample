@@ -2,7 +2,8 @@ module.exports = {
   dev: {
     options: {
       paths: ["assets/css"],
-      sourceMap:true
+      sourceMap:true,
+      ieCompat:true
     },
     files: {
       "css/production.css": "assets/less/main.less"
@@ -12,7 +13,7 @@ module.exports = {
     options: {
       paths: ["css"],
       plugins: [
-        //new require('less-plugin-autoprefix')({browsers: ["last 2 versions"]}),
+        //require('grunt-autoprefixer')({browsers: ["last 4 versions"]}),
         //new require('less-plugin-clean-css')(cleanCssOptions)
       ],      
     },
