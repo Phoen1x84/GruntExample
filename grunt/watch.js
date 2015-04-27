@@ -7,16 +7,17 @@ module.exports = {
 		files:[
 			'assets/js/*.js'
 		],
-		taks:[
+		tasks:[
 			'jshint',
-			'uglify'
+			'uglify',
+			//'concat'
 		]
 	},
 	styles:{
 		files:[
 			'assets/less/*.less'
 		],
-		tastks:[
+		tasks:[
 			'less:dev'
 		]
 	},
